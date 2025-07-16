@@ -1,0 +1,12 @@
+h1{
+    color: #38aed5;
+    font-family:arial;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+p{
+    line-height: 1.5em;
+    color : green;
+}

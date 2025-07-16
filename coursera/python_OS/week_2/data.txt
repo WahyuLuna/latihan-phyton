@@ -1,0 +1,7 @@
+ini adalah file dari latihan qoursera
+
+ini adalah baris 1
+ini adalah baris 2
+ini adalah baris 3
+ini adalah baris 4
+ini adalah baris 5

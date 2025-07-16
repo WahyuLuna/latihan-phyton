@@ -1,0 +1,95 @@
+
+    touch nama_file.type_file
+    untuk membuat file baru
+
+# pejelasan singkat dari command git
+
+    git init:
+    untuk memberikan perintah membuat reporsity baru
+
+    git config --global user.email "nama_email"
+    untuk membuat nama email pada git
+    
+    git config --global user.name "nama"
+    untuk membuat user name pada git
+
+    git commit
+    untuk masuk ke file sistem git, untuk megisi command teks
+
+    git diff
+    untuk melihat perubahaan apa sj yang baru ditambahkan
+
+    nano nama_file.py
+    untuk mengedit file python
+
+    cat nama_file
+    untuk melihat codingan dari file
+
+    git status
+    untuk melihat status apakah file tersebut sdh di edit atau belum
+
+    git config -l
+    untuk melihat list data khusus dalam folder
+
+    git commit -m 'Jenis_command'
+    untuk menambahkan data ke git
+
+    git commit -a -m "jenis_command"
+    Jalan pintas untuk melakukan perubahan apa pun pada file yang dilacak dan commit dalam satu langkah
+
+    git log -p
+    mejelaskan setiap perubahan pada history sebuah repository
+    (tekan q jika ingin keluar)
+
+    git show (commit_code)
+    menampilkan penjelasan pada commit yang di pilih
+
+    git log --stat
+    untuk melihat file apa saya yang di ubah, dan berapa banyak line yang di tambahkan atau di hapus
+
+    git add -p
+    untuk melihat perubahan, dan apakah kita ingin memakai perubahan tsb atau tidak
+    kita akan memilih pilihan y/n (yes or no)
+
+    git diff --staged
+    untuk melihat bagian yg di ubah sebelum menggunakan git commit
+
+    git checkout
+    untuk mengembalikan perubahan yang kita lakukan
+
+    git reset HEAD
+    untuk me reset perubahan yang kita inginkan
+
+    git reset -p HEAD
+    untuk me reset perubahan yang kita inginkan secara spesifik
+
+    git commit --amend
+    memungkinkan kita untuk memodifikasi dan menambahkan perubahan pada commit terbaru
+
+    git revert HEAD
+    komit baru dibuat dengan perubahan terbalik. Ini membatalkan perubahan sebelumnya alih-alih menjadikannya seolah-olah penerapan asli tidak pernah terjadi.
+
+    git branch
+    akan membuat kita masuk ke menu branch
+
+    git branch name_branch
+    akan membuat branch baru
+    
+    git checkout name_branch
+    akan berpindah ke branch tujuan
+    
+    git checkout -b name_branch
+    akan membuat branch baru dan akan berpindah ke branch tujuan
+    
+    git branch -d name_branch
+    akan menghapus branch tujuan
+
+    git merge nama_branch_tersedia (saat menggunakan perintah ini kita harus berada di branch utama)
+    akan menggabungkan branch yang dipanggil menjadi bagian dari branch utama
+
+    git log --graph --oneline
+    Ini menunjukkan tampilan ringkasan riwayat penerapan repo
+    
+    git merge --abort
+    Jika ada konflik penggabungan (artinya file tidak kompatibel), --abort dapat digunakan untuk membatalkan tindakan penggabungan.
+

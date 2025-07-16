@@ -1,0 +1,78 @@
+
+(diff) digunakan untuk mencari perbedaan dari dua file 
+cth :
+    diff main.py main2.py 
+    
+    maka diff akan melihatkan perbedaan dari kedua file tsb
+
+    diff -u namafile
+    maka akan berikan perbedaan dengan lebih rinci
+
+    diff -u old_file new_file > change.diff
+    untuk menggabungkan dua file
+
+    cp -u old_file new_file 
+    untuk mengcopy file yang nantinya di mdifikasi
+
+    patch f_1.py < change.diff
+    untuk menggabungkan codingan ke file tujuan
+
+contoh penggunaan diff -u
+
+~$ cat menu1.txt 
+Menu1:
+
+Apples
+Bananas
+Oranges
+Pears
+
+~$ cat menu2.txt 
+Menu:
+
+Apples
+Bananas
+Grapes
+Strawberries
+
+~$ diff -u menu1.txt menu2.txt 
+--- menu1.txt   2019-12-16 18:46:13.794879924 +0900
++++ menu2.txt   2019-12-16 18:46:42.090995670 +0900
+@@ -1,6 +1,6 @@
+-Menu1:
++Menu:
+ 
+ Apples
+ Bananas
+-Oranges
+-Pears
++Grapes
++Strawberries
+
+
+contoh penggunaan patch
+
+~$ cat hello_world.txt 
+Hello World
+~$ cat hello_world_long.txt 
+Hello World
+
+It's a wonderful day!
+~$ diff -u hello_world.txt hello_world_long.txt 
+--- hello_world.txt     2019-12-16 19:24:12.556102821 +0900
++++ hello_world_long.txt        2019-12-16 19:24:38.944207773 +0900
+@@ -1 +1,3 @@
+ Hello World
++
++It's a wonderful day!
+~$ diff -u hello_world.txt hello_world_long.txt > hello_world.diff
+~$ patch hello_world.txt < hello_world.diff 
+patching file hello_world.txt
+~$ cat hello_world.txt 
+Hello World
+
+It's a wonderful day!
+
+
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Syntax_dasar</title>
+    <link rel="stylesheet" href="Syntax_style.css">
+    <style>
+        a:hover{
+            color : rgb(237, 86, 60);
+        }
+        a:active{
+            color : rgb(237, 86, 60);
+        }
+        a:visited{
+            color : rgb(188, 119, 0);
+        }
+    </style>
+</head>
+
+<body >
+    
+    <h1><b> LATIHAN DASAR DAN SYNTAX HTML</b></h1>
+    <br><h4><a href="www.w3school.com">belajar syntax html di w3school.com </a> </h4>
+    <br><h4><a href="http://css-trick.com/almanac">belajar css di css-trick </a> </h4>
+    <h3>macam-macam pelajaran :</h3>
+    <ul>
+        <li><a href="#hello">Hello world</a></li>
+        <li><a href="#list">Contoh dan Type List</a></li>
+        <li><a href="#term">Term dan Description</a></li>
+        <li><a href="#hal_local">Halaman Web local</a></li>
+        <li><a href="#hal_global">Halaman Web Global</a></li>
+        <li><a href="#gambar">Memasukan Gambar</a></li>
+        <li><a href="#table">Membuat table</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+
+
+    <center>
+    <!-- jenis jenis baris -->
+    <b><!-- menebalkan kata -->
+    <h1 id="hello">Hello world</h1>
+    <h2>Hello world</h2>
+    </b>
+    <u><!-- garis bawah kata -->
+    <h3>Hello world</h3>
+    <h4>Hello world</h4>
+    </u>
+    <i><!-- membuat kata miring -->
+    <h5>Hello world</h5>
+    <h6>Hello world</h6>
+    <p>Hello world</p>
+    </i>
+    <br> <!-- <br> untuk baris baru-->
+    <br><br><br><br><br><br><br><br><br>
+    <hr><!-- untuk garis panjang -->
+    <!-- KEGUNAAN strong dan em -->
+    <p> <strong> latihan belajar </strong> html <em> bagian 1</em></p>
+    </center>
+
+    <h2 id="list"> Contoh dan Type List:</h2>
+    <ol type="1">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>Java Script</li>
+        <li>CSS</li>
+    </ol>
+    <ol type="A">
+        <li>Kelas terbuka</li>
+        <li>web programing UNPAS</li>
+        <li>Dheafrizal</li>
+    </ol>
+    <ol type="a">
+        <li>Senin</li>
+        <li>selasa</li>
+        <li>rabu</li>
+    </ol>    
+    <ol type="I">
+        <li>laptop</li>
+        <li>smartphone</li>
+        <li>computer</li>
+    </ol>
+    <ol type="i">
+        <li>game</li>
+        <li>coding</li>
+        <li>kampus</li>
+    </ol>
+    <ul type="disc">
+        <li>mangga</li>
+        <li>apel</li>
+        <li>pisang</li>
+    </ul>
+    <ul type="square">
+        <li>wahyu</li>
+        <li>luna</li>
+        <li>wijaya</li>
+    </ul>
+    <ul type="circle">
+        <li>VS code</li>
+        <li>Arduino</li>
+        <li>Proteus</li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="term"> Term dan Description</h2>
+    <dl>
+        <dt>Python</dt>
+        <dd>merupakan salah satu bahasa yang mudah di pelajari</dd>
+        <dt>Django</dt>
+        <dd>Merupakan frame work milik java yang digunakan untuk membuat suatu web</dd>
+
+    </dl>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="hal_local"> Pindah halaman web </h2>
+    <ol type="1"1>
+        <!-- target=_blank merupakan perintah membuka web di halaman baru -->
+        <li><a href="halaman2.html" target="_blank">Halaman 2</a></li>
+        <li><a href="halaman3.html" target="_blank">Halaman 3</a></li>
+    </ol>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="hal_global"> Pindah halaman web beda folder :</h2>
+    <!-- gunakan nama folder/nama file  -->
+    <ol type="1"1>
+        <li><a href="admin/halaman2.html" target="_blank">Halaman 2</a></li>
+        <li><a href="admin/halaman3.html" target="_blank">Halaman 3</a></li>
+    </ol>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="gambar">Memasukan gambar</h2>
+    <!-- gunakan % untuk sesuaikan dengan ukuran web / angka untuk ukuran pixel -->
+    <img src="image/lopox.png" title="LOPOX" width="30%" heigh="100">
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="table">Membuat Table</h2>
+    <h3>Table simple</h3><br>
+    <table border="1" cellspacing="1">
+        <tr>
+            <td>baris 1 kolom 1</td>
+            <td>baris 1 kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2 kolom 1</td>
+            <td>baris 2 kolom 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">baris 3, gabungan kolom 1&2</td>   
+        </tr>
+        <tr>
+            <td rowspan="2">gabung baris 3&4</td>
+            <td>gabungbaris 3 kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 4 kolom 2</td>
+        </tr>
+    </table><br>
+    <h3>table complex</h3>
+    <table border="1" cellspacing="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>baris 1, kolom 1</td>
+                <td>baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h2 id="form">Form</h2>
+    <h3>Input</h3>
+    <label for="">Text : <input type="text"></label><br>
+    <input type="radio"><label for="">radio</label><br>
+    <input type="checkbox">checkbox<br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <select name="" id="">
+        <option value="">pilhan 1</option>
+        <option value="">pilhan 2</option>
+        <option value="">pilhan 3</option>
+
+    </select>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+
+
+
+
+
+
+</body>
+</html>

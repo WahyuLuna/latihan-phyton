@@ -1,0 +1,4 @@
+ini adalah date text yang di buat program python
+ini adalah baris ke dua
+ini adalah baris ke tiga
+ini adalah baris ke empatdara ini di buat oleh data Append
